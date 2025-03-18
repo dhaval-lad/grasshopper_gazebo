@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <model name="side walk">
+        <pose>0 0 0 0 0 0</pose>
+        <static>true</static>
+        <link name="link">
+            <visual name="visual">
+                <pose>0 0 0.05 0 0 0</pose>
+		<geometry>
+		  <box>
+		    <size>10 2.5 0.1</size>
+		  </box>
+		</geometry>
+            <material>
+                <ambient>0.2 0.2 0.2 1.0</ambient>
+            </material>
+            </visual>
+            <collision name="collision">
+                <pose>0 0 0.05 0 0 0</pose>
+		<geometry>
+		  <box>
+		    <size>10 2.5 0.1</size>
+		  </box>
+		</geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
