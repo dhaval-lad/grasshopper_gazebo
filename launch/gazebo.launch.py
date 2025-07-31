@@ -45,7 +45,7 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             name='rviz', 
-            default_value='true',
+            default_value='false',
             description='Run rviz'
         ),
 
@@ -85,18 +85,12 @@ def generate_launch_description():
             output='screen',
             arguments=[
                 '-topic', 'robot_description', 
-                '-entity', 'linorobot2', 
+                '-entity', 'GrassHopper', 
                 '-x', LaunchConfiguration('spawn_x'),
                 '-y', LaunchConfiguration('spawn_y'),
                 '-z', LaunchConfiguration('spawn_z'),
                 '-Y', LaunchConfiguration('spawn_yaw'),
             ]
-        ),
-
-        Node(
-            package='linorobot2_gazebo',
-            executable='command_timeout.py',
-            name='command_timeout'
         ),
 
         Node(

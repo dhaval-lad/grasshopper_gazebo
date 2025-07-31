@@ -6,7 +6,8 @@
 The `grasshopper_gazebo`package is responsible for simulating 4-WD robot called GrassHopper in different simulation environment in Gazebo simulator. 
 
 ## Dependencies
-- ROS2
+- [Ubuntu 22.04](https://releases.ubuntu.com/22.04/)
+- [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 - [actor_colision_plugin](https://github.com/dhaval-lad/actor_collision_plugin.git)
 - [grasshopper_description](https://github.com/dhaval-lad/grasshopper_description.git)
 
